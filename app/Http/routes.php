@@ -17,9 +17,9 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
-Route::group(['domain' => 'emailkenisssysteem.kpnconsulting.ml'], function ()
+Route::group(['domain' => 'emailkenissysteem.kpnconsulting.ml'], function ()
 {
-	Route::get('{asdf}/{asdfg?}/{asdfsdf?}', function () {
-		return '<h1>Email Kennis Systeem</h1>';
+	Route::get('/', function () {
+		return '<h1>Email Kennis Systeem</h1><img src="pimpraat.com/pim.jpg">';
 	});
 });

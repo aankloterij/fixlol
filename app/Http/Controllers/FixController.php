@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 
-class FixController extends Controllers
+class FixController extends Controller
 {
 	public function fix()
 	{
