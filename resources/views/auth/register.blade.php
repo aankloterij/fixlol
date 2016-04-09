@@ -11,6 +11,7 @@
 
 		  <input type="text" name="name" value="{{ old('name') }}" placeholder="Name">
 
+		  <input type="email" name="email" value="{{ old('email') }}" placeholder="Email">
 		  <input type="text" name="username" value="{{ old('username') }}" placeholder="Username">
 
 		  <input type="password" name="password" placeholder="Password">
