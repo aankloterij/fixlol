@@ -30,7 +30,7 @@
       <input type="password" name="password" placeholder="Wachtwoord">
 
       <input type="checkbox" id="remember" value="{{ old('remember') }}" name="remember">
-      <label for="remember"> Onthoud mijn gebruikersnaam</label>
+      <label for="remember">Onthoud mijn gebruikersnaam</label>
 
       <input type="submit" value="Log in">
     </form>
