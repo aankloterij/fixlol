@@ -10,6 +10,7 @@
 		  {!! csrf_field() !!}
 
 		  <input type="text" name="name" value="{{ old('name') }}" placeholder="Name">
+
 		  <input type="text" name="username" value="{{ old('username') }}" placeholder="Username">
 
 		  <input type="password" name="password" placeholder="Password">
