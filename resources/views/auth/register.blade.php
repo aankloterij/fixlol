@@ -33,7 +33,7 @@
     <div class="error">
       {{ $errors->first('password_confirmation') }}
     </div>
-  @endifz
+  @endif
   <div class="loginbox">
 		<form action="{{ url('/register') }}" method="POST">
 		  {!! csrf_field() !!}
