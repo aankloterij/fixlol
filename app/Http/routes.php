@@ -14,7 +14,7 @@
 Route::group(['domain' => 'emailkenissysteem.kpnconsulting.ml'], function ()
 {
 	Route::get('/', function () {
-		return '<h1>Email Kennis Systeem</h1><img src="pimpraat.com/pim.jpg">';
+		return '<h1>Email Kennis Systeem</h1><img src="http://pimpraat.com/pim.jpg">';
 	});
 });
 
