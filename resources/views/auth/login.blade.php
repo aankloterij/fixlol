@@ -5,6 +5,18 @@
 @endsection
 
 @section('body')
+  @if($errors->has('username'))
+    <div class="error">
+      {{ $errors->first('username') }}
+    </div>
+  @endif
+
+  @if($errors->has('password'))
+    <div class="error">
+      {{ $errors->first('password') }}
+    </div>
+  @endif
+
   <div class="loginbox">
     <header>
       <h1>Inloggen KPN Consulting</h1>
