@@ -25,12 +25,12 @@
     <form action="{{ url('/login') }}" method="POST">
       {!! csrf_field() !!}
 
-      <input type="text" name="username" value="{{ old('username') }}" placeholder="Username">
+      <input type="text" name="username" value="{{ old('username') }}" placeholder="Gebruikersnaam">
 
-      <input type="password" name="password" placeholder="Password">
+      <input type="password" name="password" placeholder="Wachtwoord">
 
       <input type="checkbox" id="remember" value="{{ old('remember') }}" name="remember">
-      <label for="remember">Remember me</label>
+      <label for="remember"> Onthoud mijn gebruikersnaam</label>
 
       <input type="submit" value="Log in">
     </form>
