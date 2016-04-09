@@ -4,6 +4,8 @@ namespace App;
 
 class Fix extends \Eloquent
 {
+	protected $table = 'fix';
+
 	protected $fillable = [
 		'subject', 'body', 'tags'
 	];
@@ -18,9 +20,9 @@ class Fix extends \Eloquent
 
 		array_map(function ($value) {
 			return e($value);
-		}, $value);
+		}, $tags);
 
-		$this->attirbutes['tags'] = implode('|', $tags);
+		$this->attributes['tags'] = implode('|', $tags);
 	}
 
 	public function user()

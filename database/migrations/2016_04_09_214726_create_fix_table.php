@@ -12,8 +12,13 @@ class CreateFixTable extends Migration
      */
     public function up()
     {
-        Schema::table('fix', function (Blueprint $table) {
-            //
+        Schema::create('fix', function (Blueprint $table) {
+            $table->integer('user_id');
+            $table->string('body');
+            $table->string('tags');
+            $table->string('subject');
+
+            $table->timestamps();
         });
     }
 
@@ -24,11 +29,6 @@ class CreateFixTable extends Migration
      */
     public function down()
     {
-        Schema::table('fix', function (Blueprint $table) {
-            $table->integer('user_id');
-            $table->string('body');
-            $table->string('tags');
-            $table->string('subject');
-        });
+        Schema::drop('fix');
     }
 }
