@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', ['middleware' => 'auth', 'uses' => function () {
+    return view('welcome');
+}]);
 
 Route::auth();
 
