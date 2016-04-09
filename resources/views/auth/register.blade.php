@@ -5,6 +5,9 @@
 @endsection
 
 @section('body')
+	<pre>
+		<?php print_r($errors) ?>
+	</pre>
   <div class="loginbox">
 		<form action="{{ url('/register') }}" method="POST">
 		  {!! csrf_field() !!}
