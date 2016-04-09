@@ -23,3 +23,8 @@ Route::get('/', ['middleware' => 'auth', 'uses' => 'FixController@fix']);
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('/test', function ()
+{
+	echo "<pre>", var_dump(App\User::find(1)->fix);
+});

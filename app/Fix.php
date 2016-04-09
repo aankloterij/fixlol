@@ -2,7 +2,7 @@
 
 namespace App;
 
-class Fix extends Eloquent
+class Fix extends \Eloquent
 {
 	protected $fillable = [
 		'subject', 'body', 'tags'
@@ -21,5 +21,10 @@ class Fix extends Eloquent
 		}, $value);
 
 		$this->attirbutes['tags'] = implode('|', $tags);
+	}
+
+	public function user()
+	{
+		return $this->hasOne(User::class, 'id', 'user_id');
 	}
 }
