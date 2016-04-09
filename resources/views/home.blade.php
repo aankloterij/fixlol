@@ -5,5 +5,5 @@
 @endsection
 
 @section('body')
-	{{-- TODO --}}
+	<h1>EmailKennisSysteem</h1>
 @endsection
