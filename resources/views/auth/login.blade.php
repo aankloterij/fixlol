@@ -37,8 +37,8 @@
     <footer>
       <ul>
         <li><a href="#">Wachtwoord vergeten?</a></li>
-        <li><a href="#">Gebruikersnaam vergeten</a></li>
-        <li><a href="#">Veelgestelde vragen bij inloggen</a></li>
+        <li><a href="#">Gebruikersnaam vergeten?</a></li>
+        <li><a href="#">Veelgestelde vragen bij inloggen></a></li>
       </ul>
     </footer>
   </div>
