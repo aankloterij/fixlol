@@ -1,27 +1,92 @@
 body{
 	background: url('../img/hipster.jpg') no-repeat center center fixed;
 	background-size: cover;
-	padding: 20px;
+	padding: 20px 40px;
 }
 
 img#logo{
-	margin: 10px;
+	margin: 20px;
 	height: 60px;
+}
 
+div.loginbox header h1,
+div.loginbox header h2{
+	font-weight: 100;
+	font-size: 1.5em;
+	display: block;
+	line-height: 10px;
+	text-align: center;
+}
+
+div.loginbox header h2{
+	color: rgba(0, 0, 0, 0.87);
+	font-size: 1.4em;
 }
 
 div.loginbox{
-	border: 1px solid rgba(0, 0, 0, 0.2);
+	border: 1px solid rgba(0, 0, 0, 0.1);
 	background-color: #FFF;
-	width: 600px;
+	width: 400px;
 	padding: 10px;
+}
+
+div.loginbox form{
+	padding: 10px 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 div.loginbox input{
 	display: block;
-	font-size: 1.4em;
-	padding: 5px 10px;
-	-webkit-box-shadow: 0 0 0px 1000px #FFF inset;
-	border-bottom: 2px solid #090;
-	color: #090;
+	font-size: 1em;
+	width: 90%;
+	margin: 5px auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 10px;
+	box-shadow: 0 0 0px 1000px #FFF inset;`
+}
+
+div.loginbox input[type="submit"]{
+	border: 0;
+	box-shadow: none;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+div.loginbox input[type="checkbox"]{
+	display: none;
+}
+
+div.loginbox input[type="checkbox"] + label{
+	background: url('../img/ic_checkbox_accent.svg') no-repeat 16px center;
+	display: block;
+	margin: 0 auto;
+	cursor: pointer;
+	padding-left: 42px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	transition: background-image 100ms;
+	=moz-transition: background-image 100ms;
+}
+
+div.loginbox input[type="checkbox"]:checked + label{
+	background: url('../img/ic_checkbox_checked_accent.svg') no-repeat 16px center;
+	transition: background-image 100ms;
+	=moz-transition: background-image 100ms;
+}
+div.loginbox footer ul li a{
+	color: #333;
+	text-decoration: none;
+}
+
+div.loginbox footer ul li::before{
+	content: '> ';
+	font-size: 0.9em;
+	color: rgba(0, 0, 0, 0.87);
+	font-weight: 900;
+
+}
+
+div.loginbox footer ul li{
+	list-style-type: none;
 }

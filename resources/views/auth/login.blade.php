@@ -8,7 +8,7 @@
   <div class="loginbox">
     <header>
       <h1>Inloggen KPN Consulting</h1>
-      <h1>Medewerkerspaneel &amp; swag</h1>
+      <h2>Medewerkerspaneel</h2>
     </header>
     <form action="{{ url('/login') }}" method="POST">
       {!! csrf_field() !!}
