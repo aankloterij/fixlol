@@ -11,10 +11,15 @@
 |
 */
 
-Route::get('/', ['middleware' => 'auth', 'uses' => function () {
-    return view('welcome');
-}]);
+Route::get('/', ['middleware' => 'auth', 'uses' => 'FixController@fix']);
 
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+
+Route::group(['domain' => 'emailkenisssysteem.kpnconsulting.ml'], function ()
+{
+	Route::get('{asdf}/{asdfg?}/{asdfsdf?}', function () {
+		return '<h1>Email Kennis Systeem</h1>';
+	});
+});
