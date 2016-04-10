@@ -19,11 +19,15 @@ a#fuckidslol{
 	padding: 10px 15px;
 	position: fixed;
 	top: 20px;
-	right: 20px;
+	right: 30px;
 
 	text-decoration: none;
 }
 
 a#fuckidslol:hover{
 	background-color: rgba(0, 144, 0, 0.95);
+}
+
+textarea#postsumbit{
+
 }

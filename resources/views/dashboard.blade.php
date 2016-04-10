@@ -5,10 +5,10 @@
 @endsection
 
 @section('body')
-	
+
 	<div class="post">
 		<form action="#" method="get">
-			<textarea name="postsubmit" id="postsubmit" cols="30" rows="10" class="postsubmit"></textarea>
+			<textarea placeholder="Stel een vraag..." name="postsubmit" id="postsubmit" cols="60" rows="5" class="postsubmit"></textarea>
 		</form>
 	</div>
 
