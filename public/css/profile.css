@@ -2,6 +2,7 @@ div#profile{
 	background-color: rgba(255, 255, 255, 0.95);
 	min-height: 100%;
 	padding: 20px;
+	position: relative;
 }
 
 div#profile img{
@@ -16,5 +17,5 @@ div#profile h1{
 }
 
 div#profile h2{
-
+	
 }
