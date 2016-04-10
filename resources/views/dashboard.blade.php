@@ -5,6 +5,13 @@
 @endsection
 
 @section('body')
+	
+	<div class="post">
+		<form action="#" method="get">
+			<textarea name="postsubmit" id="postsubmit" cols="30" rows="10" class="postsubmit"></textarea>
+		</form>
+	</div>
+
 	@foreach($feed as $f)
 		<div class="post">
 			<h1>{{ $f->user->name }} - {{ $f->subject }}</h1>
