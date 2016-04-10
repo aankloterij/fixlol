@@ -13,6 +13,8 @@
 		<p>
 				Hallo, ik werk al 24 jaar in trouwe dienst bij KPNConsulting. Ik heb me gespecialiceerd in Internet of Things, en mag me dan ook teamleider noemen van 40 man. In het verleden heb ik aan zeer uiteenlopende projecten deelgenomen, dit heb ik met veel plezier gedaan. Ik probeer alle vragen zo snel mogelijk te beantwoorden.
 				<br>
+				<br>
+				<br>
 				<a href="">#Communication</a>
 				<a href="">#IoT</a>
 				<a href="">#Groningen</a>
