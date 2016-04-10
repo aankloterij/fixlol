@@ -14,7 +14,8 @@ class NaudSeeder extends Seeder
         $data = [
             [
                 'subject' => 'Project I.Turn.IT',
-                'body' => 'Hallo, samen met @pimpraat van I.Turn.IT werk ik aan een hackaton. Wij van KPNconsulting moeten een kwestie voorleggen en een praatje houden. Wie zou dit samen met mij willen doen? #cummunicatie #organisatie #education #Groningen'
+                'body' => 'Hallo, samen met @pimpraat van I.Turn.IT werk ik aan een hackaton. Wij van KPNconsulting moeten een kwestie voorleggen en een praatje houden. Wie zou dit samen met mij willen doen? #communicatie #organisatie #education #Groningen'
+                // 'Het was per ongeluk'
             ],
             [
                 'subject' => 'Algemene bijeenkomst Data & IoT Groningen',
@@ -25,7 +26,7 @@ class NaudSeeder extends Seeder
                 'body' => 'Voor iedereen van de afdeling Digital Workspace Groningen is er de keuze om je te specialiceren. Elke 2 jaar organiseren wij als departement workshops. Blablabla. #Groningen'
             ],
             [
-                'subject' => 'Probleem php-segmentationfront',
+                'subject' => 'Probleem php-segmentationfault',
                 'body' => 'Hallo, ik heb een probleem met blablabla in php. Zou iemand in groningen het me willen uitleggen. Zie bijlage voor probleem #Groningen'
             ],
             [
