@@ -80,6 +80,14 @@
 	<aside id="right">
 
 		@if(!Request::is('/profile/*'))
+		<section>
+			<span>Acties</span>
+			<form action="">
+				<label for="">Wijzig wachtwoord...</label>
+				<label for="">Wijzig biografie...</label>
+				<label for="">Privacy instellingen...</label>
+			</form>
+		</section>
 		@else
 			<section>
 				<span>{{ Auth::user()->name }}</span>
