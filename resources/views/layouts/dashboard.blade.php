@@ -9,6 +9,8 @@
 	@yield('head')
 </head>
 <body>
+	<img src="{{ url('/img/logo.svg') }}" id="logo">
+
 	<aside id="left">
 		<section>
 			<span>Zoeken</span>
@@ -75,10 +77,28 @@
 
 	<aside id="right">
 		<section>
-			<span>{{ Auth::user()->username }}</span>
-			<a href="{{ url('/profile') }}">
+			<span>{{ Auth::user()->name }}</span>
+			<a href="{{ url('/profile') . '/' . Auth::user()->username }}">
 				<img src="{{ url('/img/hipster3.jpg') }}">
 			</a>
+		</section>
+
+		<section>
+			<span>Meldingen</span>
+			<form action="">
+				<label for="">Jan heeft je uitg...</label>
+				<label for="">Max zoekt naar ee...</label>
+				<label for="">Naud commandeert ...</label>
+			</form>
+		</section>
+
+		<section>
+			<span>Berichten</span>
+			<form action="">
+				<label for="">Jan: je hebt nog ...</label>
+				<label for="">Kees: Hallo, hoe ...</label>
+				<label for="">De Jager: Maar ho...</label>
+			</form>
 		</section>
 	</aside>
 </body>

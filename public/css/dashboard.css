@@ -3,6 +3,13 @@ body{
 	background-size: cover;
 }
 
+img#logo{
+	height: 80px;
+	position: absolute;
+	top: 30px;
+	left: 40px;
+}
+
 #content{
 	width: 60%;
 	margin: 150px auto 0 auto;
@@ -10,7 +17,7 @@ body{
 
 aside{
 	top: 150px;
-	width: 180px;
+	width: 190px;
 	position: fixed;
 }
 
@@ -57,11 +64,14 @@ input:checked + label{
 	background-color: rgba(0, 0, 0, 0.2);
 }
 
-
 input[type=text]{
 	padding: 5px;
 	display: block;
 	width: 100%;
 	box-sizing: border-box;
 	background-color: transparent;
+}
+
+section a img{
+	width: 190px;
 }
