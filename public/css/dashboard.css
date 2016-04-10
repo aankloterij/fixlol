@@ -17,7 +17,7 @@ img#logo{
 
 aside{
 	top: 150px;
-	width: 190px;
+	width: 200px;
 	position: fixed;
 }
 
@@ -73,7 +73,7 @@ input[type=text]{
 }
 
 section a img{
-	width: 190px;
+	width: 200px;
 }
 
 section a img:hover{

@@ -80,6 +80,7 @@
 	<aside id="right">
 
 		@if(!Request::is('/profile/*'))
+		@else
 			<section>
 				<span>{{ Auth::user()->name }}</span>
 				<a href="{{ url('/logout') }}">Log uit</a>
