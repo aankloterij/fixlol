@@ -14,7 +14,7 @@ div#message{
 a#fuckidslol{
 	color: rgba(255, 255, 255, 0.87);
 	font-size: 1.2em;
-	background-color: rgba(0, 144, 0, 0.6);
+	background-color: rgba(0, 144, 0, 0.8);
 	display: block;
 	padding: 10px 15px;
 	position: fixed;
@@ -25,5 +25,5 @@ a#fuckidslol{
 }
 
 a#fuckidslol:hover{
-	background-color: rgba(0, 144, 0, 0.7);
+	background-color: rgba(0, 144, 0, 0.95);
 }
