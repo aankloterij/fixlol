@@ -27,13 +27,11 @@ Route::get('/home', 'HomeController@index');
 Route::get('/profile/{user}', ['uses' => 'FixController@profile', 'as' => 'profile']);
 Route::get('/catagories/{catagory}', ['uses' => 'FixController@catagory', 'as' => 'catagory']);
 
-Route::get('/search', ['uses' => 'FixController@search', 'as' => 'search']);
-
 Route::get('/message/{niks}', function($niks){
 	$messages = [
 		[
 			'from' => 'Jan van der Veen',
-			'title' => 'Je hebt nog negenenzestig absenties open staan.',
+			'title' => 'Je hebt nog dingen te doen',
 			'stuff' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur voluptatum assumenda repudiandae qui dicta eum, exercitationem maiores cumque sapiente quia, impedit animi quo debitis? Laboriosam ipsam consequatur debitis necessitatibus id corrupti sunt explicabo pariatur vero at! Doloremque, voluptas deleniti, quod explicabo nisi adipisci ratione repellat amet, magnam, et numquam obcaecati? Id est laborum molestiae veritatis cumque consequatur totam, ad maxime voluptate? Nobis, molestiae perferendis nulla, voluptates amet sed dolor tempora. Velit cum dolorum harum, autem officiis, necessitatibus numquam maxime hic assumenda, corrupti repellendus repellat ducimus perferendis molestiae nostrum. Quibusdam et ad cupiditate in consequuntur numquam officia amet, soluta distinctio illo.'
 		],
 		[
@@ -49,9 +47,9 @@ Route::get('/message/{niks}', function($niks){
 	];
 
 	switch($niks){
-		case '1': return view('lolview')->withMessage($messages[0]);
-		case '2': return view('lolview')->withMessage($messages[1]);
-		case '3': return view('lolview')->withMessage($messages[2]);
+		case '1': return view('lolview')->withMessages($messages[0]);
+		case '2': return view('lolview')->withMessages($messages[1]);
+		case '3': return view('lolview')->withMessages($messages[2]);
 
 	}
 });
