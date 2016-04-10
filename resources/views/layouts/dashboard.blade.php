@@ -11,42 +11,54 @@
 <body>
 	<aside id="left">
 		<section>
-			<h1>Categories</h1>
+			<span>Zoeken</span>
+			<input type="text" placeholder="Zoekterm">
+		</section>
+
+		<section>
+			<span>Categorie&euml;n</span>
 			<form action="">
-				<input type="checkbox" id="1">
-				<label for="1">Category 1</label>
+				<input name="" type="checkbox" id="c_favorieten">
+				<label for="c_favorieten">Favorieten</label>
 
-				<input type="checkbox" id="2">
-				<label for="2">Category 2</label>
+				<input name="" type="checkbox" id="c_projecten">
+				<label for="c_projecten">Mijn projecten</label>
 
-				<input type="checkbox" id="3">
-				<label for="3">Category 3</label>
-
-				<input type="checkbox" id="4">
-				<label for="4">Category 4</label>
+				<input name="" type="checkbox" id="c_algemeen">
+				<label for="c_algemeen">Algemeen</label>
 			</form>
 		</section>
 
 		<section>
-			<h1>Locaties</h1>
+			<span>Afdelingen</span>
 			<form action="">
-				<input type="checkbox" id="1">
-				<label for="1">Category 1</label>
 
-				<input type="checkbox" id="2">
-				<label for="2">Category 2</label>
+				<input type="checkbox" id="c_buisiness_communications">
+				<label for="c_buisiness_communications">Buisiness Communications</label>
 
-				<input type="checkbox" id="3">
-				<label for="3">Category 3</label>
+				<input type="checkbox" id="c_cloud_datacenters">
+				<label for="c_cloud_datacenters">Cloud &amp; Datacenters</label>
 
-				<input type="checkbox" id="4">
-				<label for="4">Category 4</label>
+				<input type="checkbox" id="c_data_iot">
+				<label for="c_data_iot">Data &amp; IoT</label>
+
+				<input type="checkbox" id="c_digital_workspace">
+				<label for="c_digital_workspace">Digital Workspace</label>
+
+				<input type="checkbox" id="c_professional_services">
+				<label for="c_professional_services">Professional Services</label>
+
+				<input type="checkbox" id="c_strategie_organisatie">
+				<label for="c_strategie_organisatie">Strategie &amp; Organisatie</label>
+
 			</form>
 		</section>
 
 		<section>
-			<h1>Afdelingen</h1>
+			<span>Locaties</span>
 			<form action="">
+				Apeldoorn
+				Groningen Zoetermeer
 				<input type="checkbox" id="1">
 				<label for="1">Category 1</label>
 
@@ -60,7 +72,6 @@
 				<label for="4">Category 4</label>
 			</form>
 		</section>
-
 	</aside>
 
 	<div id="content">
