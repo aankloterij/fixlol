@@ -57,19 +57,14 @@
 		<section>
 			<span>Locaties</span>
 			<form action="">
-				Apeldoorn
-				Groningen Zoetermeer
-				<input type="checkbox" id="1">
-				<label for="1">Category 1</label>
+				<input type="checkbox" id="c_apeldoorn">
+				<label for="c_apeldoorn">Apeldoorn</label>
 
-				<input type="checkbox" id="2">
-				<label for="2">Category 2</label>
+				<input type="checkbox" id="c_groningen">
+				<label for="c_groningen">Groningen</label>
 
-				<input type="checkbox" id="3">
-				<label for="3">Category 3</label>
-
-				<input type="checkbox" id="4">
-				<label for="4">Category 4</label>
+				<input type="checkbox" id="c_zoetermeer">
+				<label for="c_zoetermeer">Zoetermeer</label>
 			</form>
 		</section>
 	</aside>
