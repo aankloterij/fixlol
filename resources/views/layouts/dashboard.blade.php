@@ -9,12 +9,14 @@
 	@yield('head')
 </head>
 <body>
-	<img src="{{ url('/img/logo.svg') }}" id="logo">
+	<a href="{{ url('/') }}"><img title="Ga naar de homepagina." src="{{ url('/img/logo.svg') }}" id="logo"></a>
 
 	<aside id="left">
 		<section>
 			<span>Zoeken</span>
-			<input type="text" placeholder="Zoekterm">
+			<form action="{{ route*()->url('search') }}">
+				<input type="text" placeholder="Zoekterm">
+			</form>
 		</section>
 
 		<section>
@@ -78,6 +80,7 @@
 	<aside id="right">
 		<section>
 			<span>{{ Auth::user()->name }}</span>
+			<a href="{{ url('/logout') }}">Log uit</a>
 			<a href="{{ url('/profile') . '/' . Auth::user()->username }}">
 				<img src="{{ url('/img/hipster3.jpg') }}">
 			</a>
