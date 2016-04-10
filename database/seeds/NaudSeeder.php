@@ -26,8 +26,8 @@ class NaudSeeder extends Seeder
                 'body' => 'Voor iedereen van de afdeling Digital Workspace Groningen is er de keuze om je te specialiceren. Elke 2 jaar organiseren wij als departement workshops. Blablabla. #Groningen'
             ],
             [
-                'subject' => 'Probleem php-segmentationfault',
-                'body' => 'Hallo, ik heb een probleem met blablabla in php. Zou iemand in groningen het me willen uitleggen. Zie bijlage voor probleem #Groningen'
+                'subject' => 'Probleem objective-c segmentationfault',
+                'body' => 'Hallo, ik heb een probleem met blablabla in objective-c. Zou iemand in groningen het me willen uitleggen. Zie bijlage voor probleem #Groningen'
             ],
             [
                 'subject' => 'Vergaderruimte Groningen gezocht!!',
