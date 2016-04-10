@@ -26,7 +26,7 @@ class FeedTableSeeder extends Seeder
         	$fix = new \App\Fix();
 
             $fix->user_id = $users->random()->id;
-            $fix->body = '@' . $users->random()->username . ' ' . $faker->sentence() . ' ' . $this->rand($catagories);
+            $fix->body = $faker->sentence() . ' ' . $this->rand($catagories);
             $fix->subject = $faker->sentence(4);
 
             $fix->save();
