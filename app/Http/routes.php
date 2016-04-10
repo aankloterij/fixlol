@@ -24,5 +24,5 @@ Route::get('/test', ['uses' => 'FixController@test']);
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
-Route::get('/mentions/{mention}', ['uses' => 'FixController@mention', 'as' => 'mention']);
+Route::get('/profile/{user}', ['uses' => 'FixController@profile', 'as' => 'profile']);
 Route::get('/catagories/{catagory}', ['uses' => 'FixController@catagory', 'as' => 'catagory']);

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Fix;
+use App\User;
 
 
 class FixController extends Controller
@@ -23,14 +24,16 @@ class FixController extends Controller
 
 	}
 
-	public function mention($mention)
+	public function profile(User $user = null)
 	{
-		return view('dashboard')->withFeed(Fix::with('user')->where('body', 'like', "%$mention%"));
+		$user = $user ?: \Auth::user();
+
+		return view('profile')->withUser($user);
 	}
 
 	public function catagory($catagory)
 	{
-		return view('dashboard')->withFeed(Fix::with('user')->where('body', 'like', "%$catagory%"));
+		return view('dashboard')->withFeed(Fix::with('user')->where('body', 'like', "%$catagory%")->get());
 	}
 
 	public function getFeed(array $catagories, $search)
