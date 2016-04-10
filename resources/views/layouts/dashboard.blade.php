@@ -78,13 +78,16 @@
 	</div>
 
 	<aside id="right">
-		<section>
-			<span>{{ Auth::user()->name }}</span>
-			<a href="{{ url('/logout') }}">Log uit</a>
-			<a href="{{ url('/profile') . '/' . Auth::user()->username }}">
-				<img src="{{ url('/img/hipster3.jpg') }}">
-			</a>
-		</section>
+
+		@if(!Request->is('/profile/*'))
+			<section>
+				<span>{{ Auth::user()->name }}</span>
+				<a href="{{ url('/logout') }}">Log uit</a>
+				<a href="{{ url('/profile') . '/' . Auth::user()->username }}">
+					<img src="{{ url('/img/hipster3.jpg') }}">
+				</a>
+			</section>
+		@endif
 
 		<section>
 			<span>Meldingen</span>
