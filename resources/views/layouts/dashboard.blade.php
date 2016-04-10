@@ -74,7 +74,12 @@
 	</div>
 
 	<aside id="right">
-		sdf
+		<section>
+			<span>{{ Auth::user()->username }}</span>
+			<a href="{{ url('/profile') }}">
+				<img src="{{ url('/img/hipster3.jpg') }}">
+			</a>
+		</section>
 	</aside>
 </body>
 </html>

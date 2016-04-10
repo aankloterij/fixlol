@@ -26,7 +26,7 @@ class FixController extends Controller
 
 	public function profile(User $user = null)
 	{
-		$user = $user ?: \Auth::user();
+		$user = $user ? $user : \Auth::user();
 
 		return view('profile')->withUser($user);
 	}
