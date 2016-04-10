@@ -10,7 +10,7 @@ body{
 
 aside{
 	top: 150px;
-	width: 150px;
+	width: 180px;
 	position: fixed;
 }
 
@@ -22,11 +22,24 @@ aside{
 	right: 30px;
 }
 
+aside section{
+	background-color: rgba(255, 255, 255, 0.95);
+	border-radius: 2px;
+	margin-bottom: 10px;
+}
+
+aside section span{
+	border-bottom: 1px solid grey;
+	padding: 10px 10px 2px 10px;
+	display: block;
+	font-weight: 700;
+}
+
 div.post{
 	margin: 3px 0;
 	background-color: rgba(255, 255, 255, 0.95);
 	padding: 10px;
-	border-radius: 3px;
+	border-radius: 2px;
 	border-bottom: 1px solid grey;
 }
 
@@ -35,6 +48,7 @@ input{
 }
 
 label{
+	cursor: pointer;
 	display: block;
 	padding: 6px 10px;
 }
@@ -43,6 +57,11 @@ input:checked + label{
 	background-color: rgba(0, 0, 0, 0.2);
 }
 
-aside section{
-	background-color: #fff;
+
+input[type=text]{
+	padding: 5px;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	background-color: transparent;
 }
