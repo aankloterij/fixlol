@@ -41,11 +41,13 @@ class NaudSeeder extends Seeder
 
         ];
 
+        $users = App\Users::all();
+
         foreach ($data as $newuser)
         {
             $fix = new App\Fix();
 
-            $fix->user_id = $users->random()->id;
+            $fix->user_id = $user->random()->id;
             $fix->body = $newuser['body'];
             $fix->subject = $newuser['subject'];
 
