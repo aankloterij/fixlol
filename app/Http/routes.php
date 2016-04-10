@@ -28,3 +28,8 @@ Route::get('/test', function ()
 {
 	echo "<pre>", var_dump(App\User::find(1)->fix);
 });
+
+
+Route::get('/mentions/{mention}', ['uses' => 'FixController@mention', 'as' => 'mention']);
+
+Route::get('/catagories/{catagory}', ['uses' => 'FixController@catagory', 'as' => 'catagory']);
