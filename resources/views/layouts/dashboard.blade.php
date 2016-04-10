@@ -10,6 +10,7 @@
 </head>
 <body>
 	<a href="{{ url('/') }}"><img title="Ga naar de homepagina." src="{{ url('/img/logo.svg') }}" id="logo"></a>
+	<a id="fuckidslol" href="{{ url('/logout') }}">Log uit</a>
 
 	<aside id="left">
 		<section>
@@ -91,7 +92,6 @@
 		@else
 			<section>
 				<span>{{ Auth::user()->name }}</span>
-				<a href="{{ url('/logout') }}">Log uit</a>
 				<a href="{{ url('/profile') . '/' . Auth::user()->username }}">
 					<img src="{{ url('/img/hipster3.jpg') }}">
 				</a>
