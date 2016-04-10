@@ -59,7 +59,8 @@ class FixController extends Controller
 
 		$query->orderBy('created_at', 'desc')->with('user');
 
-		return $query->get();
+		// return $query->get();
+		return Fix::all();
 
 	}
 
