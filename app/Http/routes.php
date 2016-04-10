@@ -19,17 +19,10 @@ Route::group(['domain' => 'emailkenissysteem.kpnconsulting.ml'], function ()
 });
 
 Route::get('/', ['middleware' => 'auth', 'uses' => 'FixController@fix']);
+Route::get('/test', ['uses' => 'FixController@test']);
 
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
-
-Route::get('/test', function ()
-{
-	echo "<pre>", var_dump(App\User::find(1)->fix);
-});
-
-
 Route::get('/mentions/{mention}', ['uses' => 'FixController@mention', 'as' => 'mention']);
-
 Route::get('/catagories/{catagory}', ['uses' => 'FixController@catagory', 'as' => 'catagory']);

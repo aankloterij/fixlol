@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
+use App\Fix;
+
 
 class FixController extends Controller
 {
@@ -12,30 +15,38 @@ class FixController extends Controller
 
 	public function fix(Request $request)
 	{
-		return view('home')->withFeed($this->getFeed(array_keys($request->except('_search'))));
+		return view('dashboard')->withFeed($this->getFeed(array_keys($request->except('_search')), $request->_search));
 	}
 
-	public function getFeed($catagories)
+	public function test()
+	{
+
+	}
+
+	public function getFeed(array $catagories, $search)
 	{
 		$mention = '@' . $this->user->username;
 
 		$query = Fix::query();
 
-		if ($request->_search) $query->where('body', 'like', "%$request->_search%");
-
-		if ($catagories)
+		$query->where(function () use ($catagories, $search, $query, $mention)
 		{
-			$query->where(function ()
+			if (count($catagories))
 			{
-				for ($catagories as $catagory)
+				foreach ($catagories as $catagory)
 				{
 					$query->orWhere('tags', 'like', "%$catagory%");
 				}
-			});
-		}
+			}
 
-		$query->orWhere('body', 'like', $mention);
+			$query->orWhere('body', 'like', "%$mention%");
+		});
 
-		return $query->recent()->get();
+		if ($search) $query->where('body', 'like', "%$search%");
+
+		$query->orderBy('created_at', 'desc')->with('user');
+
+		return $query->get();
+
 	}
 }

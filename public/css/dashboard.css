@@ -1,0 +1,48 @@
+body{
+	background: url('../img/hipster2.jpg') no-repeat center center fixed;
+	background-size: cover;
+}
+
+#content{
+	width: 60%;
+	margin: 150px auto 0 auto;
+}
+
+aside{
+	top: 150px;
+	width: 150px;
+	position: fixed;
+}
+
+#left{
+	left: 30px;
+}
+
+#right{
+	right: 30px;
+}
+
+div.post{
+	margin: 3px 0;
+	background-color: rgba(255, 255, 255, 0.95);
+	padding: 10px;
+	border-radius: 3px;
+	border-bottom: 1px solid grey;
+}
+
+input{
+	display: none;
+}
+
+label{
+	display: block;
+	padding: 6px 10px;
+}
+
+input:checked + label{
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+aside section{
+	background-color: #fff;
+}
