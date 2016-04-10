@@ -11,7 +11,12 @@
 		<h1>{{ $user->name }}</h1>
 		<h2>{{ $user->username }}</h2>
 		<p>
-				Hallo, ik werk al 24 jaar in trouwe dienst bij KPNConsulting. Ik heb me gespecialiceerd in Internet of Things, en mag me dan ook teamleider noemen van 40 man. In het verleden heb ik aan zeer uiteenlopende projecten deelgenomen, dit heb ik met veel plezier gedaan. Ik probeer alle vragen zo snel mogelijk te beantwoorden. 
+				Hallo, ik werk al 24 jaar in trouwe dienst bij KPNConsulting. Ik heb me gespecialiceerd in Internet of Things, en mag me dan ook teamleider noemen van 40 man. In het verleden heb ik aan zeer uiteenlopende projecten deelgenomen, dit heb ik met veel plezier gedaan. Ik probeer alle vragen zo snel mogelijk te beantwoorden.
+				<a href="">#Communication </a>
+				<a href="">#IoT</a>
+				<a href="">#Groningen</a>
+				<a href="">#PHP</a>
+				<a href="">#Assembly</a>
 		</p>
 		<h3>{{ $user->email }}</h3>
 	</div>
