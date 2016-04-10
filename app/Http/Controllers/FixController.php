@@ -23,12 +23,12 @@ class FixController extends Controller
 
 	}
 
-	public function mentions($mention)
+	public function mention($mention)
 	{
 		return view('dashboard')->withFeed(Fix::with('user')->where('body', 'like', "%$mention%"));
 	}
 
-	public function catagories($catagory)
+	public function catagory($catagory)
 	{
 		return view('dashboard')->withFeed(Fix::with('user')->where('body', 'like', "%$catagory%"));
 	}
