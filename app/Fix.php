@@ -25,6 +25,24 @@ class Fix extends \Eloquent
 		$this->attributes['tags'] = implode('|', $tags);
 	}
 
+	public function getBodyAttribute()
+	{
+		$attr = $this->attributes['body'];
+
+		// mentions
+		$attr = preg_replace_callback('/@([a-zA-Z0-9-_]+)/', function ($matches)
+		{
+			return sprintf('<a class="mention" href="%s">%s</a>', url()->route('mention', $matches[1]), $matches[0];
+		}, $attr);
+
+		$attr = preg_replace_callback('/#([a-zA-Z][a-zA-Z0-9_-]*)/', function ()
+		{
+			return sprintf('<a class="catagory" href="%s">%s</a>', url()->route('catagory', $matches[1]), $matches[0]);
+		}, $attr);
+
+		return $attr;
+	}
+
 	public function user()
 	{
 		return $this->hasOne(User::class, 'id', 'user_id');
