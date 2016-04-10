@@ -75,3 +75,7 @@ input[type=text]{
 section a img{
 	width: 190px;
 }
+
+section a img:hover{
+	background: url(https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_settings_48px-128.png) no-repeat center center;
+}
