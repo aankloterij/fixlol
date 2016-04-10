@@ -24,13 +24,13 @@
 
 	<div class="profilebox">
 		<div class="timeline">
-			<div class="time-item"><span>2016 - I.Turn.IT hackaton georganiseerd</span></div>
+			<div class="time-item"><span>2016 - I.Turn.IT hackathon georganiseerd</span></div>
 			<div class="time-item"><span>2015 - Cursus lesgeven</span></div>
-			<div class="time-item"><span>2012 - Cursus windows vista</span></div>
-			<div class="time-item"><span>2012 - Cursus How to Swag</span></div>
+			<div class="time-item"><span>2012 - Cursus Windows Vista</span></div>
 			<div class="time-item"><span>1992 - Aangenomen KPNconsultant als meneer in pak</span></div>
 			<div class="time-item"><span>1991 - Afgestudeerd als programmeur RUG</span></div>
 			<div class="time-item"><span>1984 - VWO diploma</span></div>
+			<div class="time-item"><span>1969 - Cursus How-To-Swag</span></div>
 		</div>
 	</div>
 @endsection
