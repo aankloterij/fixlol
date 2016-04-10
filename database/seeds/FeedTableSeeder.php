@@ -13,7 +13,7 @@ class FeedTableSeeder extends Seeder
      */
     public function run()
     {
-        $user = App\User::first();
+        $users = App\User::all();
 
         $faker = Factory::create();
 
@@ -23,11 +23,16 @@ class FeedTableSeeder extends Seeder
         {
         	$fix = new App\Fix();
 
-            $fix->user_id = $user->id;
-            $fix->body = $faker->sentences(8, 4) . ' ' . $catagories[array_rand($catagories)];
+            $fix->user_id = $users->random()->id;
+            $fix->body = '@' . $users->random()->username . ' ' . $faker->sentence() . ' ' . $this->rand($catagories);
             $fix->subject = $faker->sentence(4);
 
             $fix->save();
         }
+    }
+
+    protected function rand(array $source)
+    {
+        return $source[array_rand($source)];
     }
 }
