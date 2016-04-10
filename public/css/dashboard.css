@@ -5,7 +5,7 @@ body{
 
 img#logo{
 	height: 80px;
-	position: absolute;
+	position: fixed;
 	top: 30px;
 	left: 40px;
 }
