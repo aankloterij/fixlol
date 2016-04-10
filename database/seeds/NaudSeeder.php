@@ -46,7 +46,7 @@ class NaudSeeder extends Seeder
 
             $fix->user_id = $users->random()->id;
             $fix->body = $newuser['body'];
-            $fix->subject = $newuser['body'];
+            $fix->subject = $newuser['subject'];
 
             $fix->save();
         }
