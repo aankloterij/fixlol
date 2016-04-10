@@ -62,4 +62,15 @@ class FixController extends Controller
 		return $query->get();
 
 	}
+
+	public function createFeed(Request $request){
+		$data = $request->only('postsubmit');
+
+		\Fix::create([
+			'subject' => strrand(),
+			'body' => $data
+		]);
+
+		return redirect('/');
+	}
 }

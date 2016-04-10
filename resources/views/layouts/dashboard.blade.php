@@ -80,7 +80,7 @@
 
 	<aside id="right">
 
-		@if(!Request::is('/profile/*'))
+		@if(Request::is('profile/*'))
 		<section>
 			<span>Acties</span>
 			<form action="">

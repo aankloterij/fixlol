@@ -7,7 +7,9 @@
 @section('body')
 
 	<div class="post">
-		<form action="#" method="get">
+		<form ondblclick="submit()" action="{{ url('/feed/create') }}" method="POST">
+      {!! csrf_field() !!}
+
 			<textarea placeholder="Stel een vraag..." name="postsubmit" id="postsubmit" rows="5" class="postsubmit"></textarea>
 		</form>
 	</div>

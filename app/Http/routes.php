@@ -21,6 +21,8 @@ Route::group(['domain' => 'emailkenissysteem.kpnconsulting.ml'], function ()
 Route::get('/', ['middleware' => 'auth', 'uses' => 'FixController@fix']);
 Route::get('/test', ['uses' => 'FixController@test']);
 
+Route::post('/feed/create', 'FixController@createFeed');
+
 Route::get('/search', ['uses' => 'FixController@search', 'as' => 'search']);
 
 Route::auth();
