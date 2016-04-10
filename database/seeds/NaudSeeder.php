@@ -50,7 +50,7 @@ class NaudSeeder extends Seeder
         {
             $fix = new App\Fix();
 
-            $fix->user_id = $user->random()->id;
+            $fix->user_id = $users->random()->id;
             $fix->body = $newuser['body'];
             $fix->subject = $newuser['subject'];
 
