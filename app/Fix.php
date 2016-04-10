@@ -32,7 +32,7 @@ class Fix extends \Eloquent
 		// mentions
 		$attr = preg_replace_callback('/@([a-zA-Z0-9-_]+)/', function ($matches)
 		{
-			return sprintf('<a class="mention" href="%s">%s</a>', url()->route('mention', $matches[1]), $matches[0];
+			return sprintf('<a class="mention" href="%s">%s</a>', url()->route('mention', $matches[1]), $matches[0]);
 		}, $attr);
 
 		$attr = preg_replace_callback('/#([a-zA-Z][a-zA-Z0-9_-]*)/', function ()
