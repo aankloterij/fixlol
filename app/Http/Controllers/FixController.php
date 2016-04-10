@@ -23,9 +23,11 @@ class FixController extends Controller
 
 	}
 
-	public function mention($mention)
+	public function profile(User $user = null)
 	{
-		return view('dashboard')->withFeed(Fix::with('user')->where('body', 'like', "%@$mention%")->get());
+		$user = $user ?: \Auth::user();
+
+		return view('profile')->withUser($user);
 	}
 
 	public function catagory($catagory)
