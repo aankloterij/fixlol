@@ -49,9 +49,9 @@ Route::get('/message/{niks}', function($niks){
 	];
 
 	switch($niks){
-		case '1': return view('lolview')->withMessages($messages[0]);
-		case '2': return view('lolview')->withMessages($messages[1]);
-		case '3': return view('lolview')->withMessages($messages[2]);
+		case '1': return view('lolview')->withMessage($messages[0]);
+		case '2': return view('lolview')->withMessage($messages[1]);
+		case '3': return view('lolview')->withMessage($messages[2]);
 
 	}
 });
