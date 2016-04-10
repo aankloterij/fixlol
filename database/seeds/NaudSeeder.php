@@ -2,6 +2,9 @@
 
 use Illuminate\Database\Seeder;
 
+use App\User;
+
+
 class NaudSeeder extends Seeder
 {
     /**
@@ -41,7 +44,7 @@ class NaudSeeder extends Seeder
 
         ];
 
-        $users = App\Users::all();
+        $users = App\User::all();
 
         foreach ($data as $newuser)
         {
