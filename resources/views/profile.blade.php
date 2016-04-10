@@ -16,6 +16,7 @@
 				<a href="">#IoT</a>
 				<a href="">#Groningen</a>
 				<a href="">#PHP</a>
+				<a href="">#Education</a>
 				<a href="">#Assembly</a>
 		</p>
 		<h3>{{ $user->email }}</h3>
@@ -23,11 +24,13 @@
 
 	<div class="profilebox">
 		<div class="timeline">
-			<div class="time-item">2004 - Van school gegaan</div>
-			<div class="time-item">2004 - Naar school gegaan</div>
-			<div class="time-item">2001 - Geld was op</div>
-			<div class="time-item">1999 - Loterij gewonnen</div>
-			<div class="time-item">1998 - Geboren</div>
+			<div class="time-item"><span>2016 - I.Turn.IT hackaton georganiseerd</span></div>
+			<div class="time-item"><span>2015 - Cursus lesgeven</span></div>
+			<div class="time-item"><span>2012 - Cursus windows vista</span></div>
+			<div class="time-item"><span>2012 - Cursus How to Swag</span></div>
+			<div class="time-item"><span>1992 - Aangenomen KPNconsultant als meneer in pak</span></div>
+			<div class="time-item"><span>1991 - Afgestudeerd als programmeur RUG</span></div>
+			<div class="time-item"><span>1984 - VWO diploma</span></div>
 		</div>
 	</div>
 @endsection
