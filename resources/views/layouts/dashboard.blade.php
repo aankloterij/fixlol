@@ -14,7 +14,7 @@
 	<aside id="left">
 		<section>
 			<span>Zoeken</span>
-			<form action="{{ route*()->url('search') }}">
+			<form action="{{ url()->route('search') }}">
 				<input type="text" placeholder="Zoekterm">
 			</form>
 		</section>

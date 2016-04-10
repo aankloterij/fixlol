@@ -6,7 +6,7 @@
 @endsection
 
 @section('body')
-	<div id="profile">
+	<div class="profilebox">
 		<img src="{{ url('/img/hipster3.jpg') }}" alt="Hipster 3">
 		<h1>{{ $user->name }}</h1>
 		<h2>{{ $user->username }}</h2>
@@ -19,5 +19,15 @@
 				<a href="">#Assembly</a>
 		</p>
 		<h3>{{ $user->email }}</h3>
+	</div>
+
+	<div class="profilebox">
+		<div class="timeline">
+			<div class="time-item">2004 - Van school gegaan</div>
+			<div class="time-item">2004 - Naar school gegaan</div>
+			<div class="time-item">2001 - Geld was op</div>
+			<div class="time-item">1999 - Loterij gewonnen</div>
+			<div class="time-item">1998 - Geboren</div>
+		</div>
 	</div>
 @endsection
