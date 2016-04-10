@@ -13,9 +13,9 @@ class UsersTableSeeder extends Seeder
     {
         $data = [
             [
-                'username' => 'root',
-                'name' => 'jemoeder',
-                'email' => 'je@moeder.com',
+                'username' => 'sibren',
+                'name' => 'Sibren Talens',
+                'email' => 'sibrentalens@gmail.com',
             ], [
                 'username' => 'ziggolover69',
                 'name' => 'Meneer Katerberg',
@@ -32,6 +32,8 @@ class UsersTableSeeder extends Seeder
 
         ];
 
+        $i = 0;
+
         foreach ($data as $newuser)
         {
             $user = new App\User();
@@ -40,6 +42,8 @@ class UsersTableSeeder extends Seeder
             $user->name = $newuser['name'];
             $user->email = $newuser['email'];
             $user->password = bcrypt('grijzelijntjes');
+            $user->department_id = ++$i;
+            $user->location_id = $i % 3;
 
             $user->save();
         }

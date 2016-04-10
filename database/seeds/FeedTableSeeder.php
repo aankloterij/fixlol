@@ -14,6 +14,8 @@ class FeedTableSeeder extends Seeder
     public function run()
     {
         $users = App\User::all();
+        $locations = \App\Location::all();
+        $departments = \App\Department::all();
 
         $faker = Factory::create();
 
@@ -21,7 +23,7 @@ class FeedTableSeeder extends Seeder
 
         for ($i = 0; $i < 100; $i++)
         {
-        	$fix = new App\Fix();
+        	$fix = new \App\Fix();
 
             $fix->user_id = $users->random()->id;
             $fix->body = '@' . $users->random()->username . ' ' . $faker->sentence() . ' ' . $this->rand($catagories);

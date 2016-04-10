@@ -12,7 +12,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'username',
+        'name', 'email', 'password', 'username', 'department_id', 'location_id'
     ];
 
     /**
@@ -27,5 +27,15 @@ class User extends Authenticatable
     public function fix()
     {
         return $this->hasMany(Fix::class, 'user_id', 'id');
+    }
+
+    public function department()
+    {
+        return $this->hasOne('department', 'id', 'department_id');
+    }
+
+    public function location()
+    {
+        return $this->hasOne('location', 'id', 'location_id');
     }
 }

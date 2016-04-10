@@ -7,7 +7,7 @@ class Fix extends \Eloquent
 	protected $table = 'fix';
 
 	protected $fillable = [
-		'subject', 'body', 'tags'
+		'subject', 'body', 'tags', 'location_id'
 	];
 
 	public function setBodyAttribute($value)
