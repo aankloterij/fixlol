@@ -8,7 +8,7 @@
 
 	<div class="post">
 		<form action="#" method="get">
-			<textarea placeholder="Stel een vraag..." name="postsubmit" id="postsubmit" cols="60" rows="5" class="postsubmit"></textarea>
+			<textarea placeholder="Stel een vraag..." name="postsubmit" id="postsubmit" rows="5" class="postsubmit"></textarea>
 		</form>
 	</div>
 
