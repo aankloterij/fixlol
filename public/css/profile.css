@@ -7,3 +7,14 @@ div#profile{
 div#profile img{
 	height: 200px;
 }
+
+div#profile h1{
+	position: absolute;
+	left: 240px;
+	top: 20px;
+	font-size: 3em;
+}
+
+div#profile h2{
+
+}
