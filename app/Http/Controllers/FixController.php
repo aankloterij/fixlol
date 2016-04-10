@@ -30,9 +30,7 @@ class FixController extends Controller
 
 	public function catagory($catagory)
 	{
-		$catagory = preg_quote($catagory);
-
-		return view('dashboard')->withFeed(Fix::with('user')->where('body', 'regexp', "\b$catagory\b")->get());
+		return view('dashboard')->withFeed(Fix::with('user')->where('body', 'like', "%$catagory%")->get());
 	}
 
 	public function getFeed(array $catagories, $search)
