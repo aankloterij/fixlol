@@ -35,7 +35,7 @@ class Fix extends \Eloquent
 			return sprintf('<a class="mention" href="%s">%s</a>', url()->route('mention', $matches[1]), $matches[0]);
 		}, $attr);
 
-		$attr = preg_replace_callback('/#([a-zA-Z][a-zA-Z0-9_-]*)/', function ()
+		$attr = preg_replace_callback('/#([a-zA-Z][a-zA-Z0-9_-]*)/', function ($matches)
 		{
 			return sprintf('<a class="catagory" href="%s">%s</a>', url()->route('catagory', $matches[1]), $matches[0]);
 		}, $attr);
