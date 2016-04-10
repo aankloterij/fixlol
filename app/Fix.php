@@ -27,7 +27,7 @@ class Fix extends \Eloquent
 
 	public function getBodyAttribute()
 	{
-		$attr = $this->attributes['body'];
+		$attr = e($this->attributes['body']);
 
 		// mentions
 		$attr = preg_replace_callback('/@([a-zA-Z0-9-_]+)/', function ($matches)
