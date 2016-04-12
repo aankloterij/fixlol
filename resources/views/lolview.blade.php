@@ -1,13 +1,20 @@
-@extends('layouts.dashboard')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Email Kennis Systeem</title>
+	<style>
+		*{
+			font-family: sans-serif;
+		}
 
-@section('head')
-
-@endsection
-
-@section('body')
-	<div id="message">
-		<h2>{{ $message['from'] }}</h2>
-		<h1>{{ $message['title'] }}</h1>
-		<p>{{ $message['stuff'] }}</p>
-	</div>
-@endsection
+		img{
+			border-radius: 50%;
+		}
+	</style>
+</head>
+<body>
+	<h1>Email Kennis Systeem</h1>
+	<img src="http://pimpraat.com/pim.jpg" alt="Pim Praat">
+</body>
+</html>
